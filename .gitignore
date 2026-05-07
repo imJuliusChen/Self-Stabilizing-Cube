@@ -1,0 +1,27 @@
+# Arduino / C++ build files
+*.elf
+*.hex
+*.bin
+*.out
+*.o
+*.a
+build/
+.build/
+
+# VS Code / IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
