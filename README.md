@@ -4,15 +4,15 @@
 
 The Self-Stabilizing Cube is an open-source testbed designed to address the fundamental challenge of stabilizing an open-loop unstable system using advanced feedback control. Inspired by real-world aerospace attitude control systems, the cube is capable of balancing itself on one of its corners and simultaneously rotating around its axis in a controlled manner.
 
-**Full Documentation & Visuals:** [Project Portfolio](https://imJuliusChen.github.io)
+**Full Documentation & Visuals:** [Project Portfolio](https://imjuliuschen.github.io/#cube)
 
 ---
 
 ## Project Overview
 
-As a complex mechatronic device, the system utilizes three internal reaction wheels mounted orthogonally to each face of the cube for precise actuation. This repository contains the complete C++ firmware required to run the stabilization and estimation loops.
+As a complex mechatronic device, the system utilizes three internal reaction wheels mounted orthogonally to each face of the cube for precise actuation. This repository contains the complete C++ firmware required to run the stabilization and estimation loops. 
 
-As the sole designer, builder, and tuner of this project, I systematically integrated 3D mechanical design, embedded systems, and optimal control theory to achieve rapid and robust stabilization.
+As the sole designer, builder, and tuner of this project, I systematically integrated 3D mechanical design, embedded systems, and optimal control theory to achieve rapid and robust stabilization. 
 
 ### Key Technical Achievements
 
@@ -22,11 +22,11 @@ As the sole designer, builder, and tuner of this project, I systematically integ
 
 * **Quaternion-Based Estimation:** Robust, singularity-free attitude estimation was achieved utilizing a quaternion-based complementary filter (AHRS), transforming noisy accelerometer and drifting gyroscope data from a single MPU-6050 IMU into actionable control data.
 
-* **Optimized Real-Time Embedded Systems:** The firmware is built in C++ leveraging FreeRTOS for multi-core task scheduling. The fast-running motor FOC task is assigned to Core 0, while the critical 100Hz Estimation and Control tasks run on Core 1, eliminating latency and phase lag.
+* **Optimized Real-Time Embedded Systems:** The firmware is built in C++ leveraging FreeRTOS for multi-core task scheduling. The fast-running motor FOC task is assigned to Core 0, while the critical 100Hz Estimation and Control tasks run on Core 1, eliminating latency and phase lag. 
 
 * **Hardware Execution:** The prototype utilizes a custom-soldered prototype board with internal wiring to interface the ESP32, BLDC motors, and I2C sensors.
 
-### Performance
+### Performance 
 
 Through rigorous model validation and invariant analysis, the physical prototype successfully recovers from a 10° inclination disturbance and settles in less than 1 second.
 
